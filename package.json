@@ -1,0 +1,53 @@
+{
+  "name": "noticed",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prepare": "svelte-kit sync || echo ''",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "db:push": "drizzle-kit push",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
+  },
+  "devDependencies": {
+    "@internationalized/date": "^3.8.1",
+    "@lucide/svelte": "^0.515.0",
+    "@sveltejs/adapter-auto": "^6.0.0",
+    "@sveltejs/kit": "^2.16.0",
+    "@sveltejs/vite-plugin-svelte": "^5.0.0",
+    "@types/node": "^22",
+    "bits-ui": "^2.7.0",
+    "drizzle-kit": "^0.30.2",
+    "formsnap": "^2.0.1",
+    "svelte": "^5.0.0",
+    "svelte-check": "^4.0.0",
+    "svelte-sonner": "^1.0.5",
+    "sveltekit-superforms": "^2.26.1",
+    "tailwind-variants": "^1.0.0",
+    "tw-animate-css": "^1.3.4",
+    "typescript": "^5.0.0",
+    "vite": "^6.2.6"
+  },
+  "dependencies": {
+    "@node-rs/argon2": "^2.0.2",
+    "@oslojs/crypto": "^1.0.1",
+    "@oslojs/encoding": "^1.1.0",
+    "@tailwindcss/vite": "^4.1.10",
+    "arctic": "^3.7.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "drizzle-orm": "^0.40.0",
+    "mode-watcher": "^1.0.8",
+    "postgres": "^3.4.5",
+    "prettier-plugin-svelte": "^3.4.0",
+    "svelte-lexical": "^0.6.0",
+    "svelte-motion": "^0.12.2",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss": "^4.1.10"
+  }
+}
