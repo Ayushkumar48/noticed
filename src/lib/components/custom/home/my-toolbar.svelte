@@ -18,6 +18,7 @@
 
 <Toolbar>
   {#snippet children({ editor, activeEditor, blockType })}
+    <SaveButton />
     <FontFamilyDropDown />
     <FontSizeDropDown />
     <Divider />
@@ -31,6 +32,5 @@
       <InsertHRDropDownItem />
     </InsertDropDown>
     <DropDownAlign />
-    <SaveButton />
   {/snippet}
 </Toolbar>
