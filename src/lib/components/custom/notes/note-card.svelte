@@ -8,6 +8,7 @@
   import { type Component } from "svelte";
   import { cn } from "$lib/utils";
   import { toast } from "svelte-sonner";
+  import { notes } from "$lib/client";
   type Note = {
     id: string;
     userId: string;
@@ -34,6 +35,7 @@
       use:enhance={() => {
         return async ({ result, update }) => {
           if (result.type === "success") {
+            await notes.delete(note.id);
             toast.success("Note Deleted!");
             openDialog = false;
           } else {

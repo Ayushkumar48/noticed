@@ -2,7 +2,6 @@
   import { goto } from "$app/navigation";
   import { page } from "$app/state";
   import { notes } from "$lib/client";
-  import { Separator } from "$lib/components/ui/separator";
   import { Save } from "@lucide/svelte";
   import axios, { isAxiosError } from "axios";
   import { onMount } from "svelte";
@@ -54,11 +53,11 @@
 </script>
 
 <button
-  class="cursor-pointer shrink-0 border-r mx-0.5 px-0.5 border-gray-200"
+  class="cursor-pointer shrink-0 border-r h-full border-gray-200"
   onclick={handleSave}
 >
   <Save
     strokeWidth={1.5}
-    class="hover:bg-neutral-300 h-full w-full rounded-md p-1"
+    class="hover:bg-neutral-300 h-6 w-6 rounded-md p-0.5 mr-1"
   />
 </button>

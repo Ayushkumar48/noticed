@@ -1,6 +1,6 @@
 import Dexie from "dexie";
 
-interface Note {
+export interface Note {
   id?: string;
   content: string;
 }

@@ -14,11 +14,16 @@
     InsertHRDropDownItem,
   } from "svelte-lexical";
   import SaveButton from "./save-button.svelte";
+  import DeleteButton from "./delete-button.svelte";
+  import { page } from "$app/state";
 </script>
 
 <Toolbar>
-  {#snippet children({ editor, activeEditor, blockType })}
+  {#snippet children()}
     <SaveButton />
+    {#if page.params.noteId}
+      <DeleteButton />
+    {/if}
     <FontFamilyDropDown />
     <FontSizeDropDown />
     <Divider />
